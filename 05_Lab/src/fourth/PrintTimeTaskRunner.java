@@ -12,6 +12,6 @@ public class PrintTimeTaskRunner extends AbstractTaskRunner {
 
     @Override
     protected void afterExecution(Task task) {
-        System.out.println(String.format("The hour is : %d", Calendar.HOUR));
+        System.out.println(Calendar.getInstance().getTime().getHours());
     }
 }
